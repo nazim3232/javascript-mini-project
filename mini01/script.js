@@ -107,9 +107,9 @@ const randomQuotes = [
 
 
 let button = document.querySelector('button');
-console.log(button);
+//console.log(button);
 let container = document.querySelector('#container');
-console.log(container);
+//console.log(container);
 
 
 button.addEventListener('click', ()=>
