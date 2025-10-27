@@ -16,12 +16,15 @@ body.addEventListener('click', (e)=>{
   "black",
   "white"
 ];
-elem.textContent = "hi";
+// elem.textContent = "hi";
 elem.style.backgroundColor = colors[Math.floor(Math.random()*10)];
 elem.style.top = `${e.clientY -10}px`;
  elem.style.left = `${e.clientX -10}px`;
  body.append(elem);
-
+ console.log(elem);
+ setTimeout(()=>{
+    elem.remove();
+ }, 5000)
 })
 
 // let insideDiv = document.querySelector('#divElement');
